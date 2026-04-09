@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --font-pixel: "Silkscreen", cursive;
+}
+
+@layer components {
+  .ability-icon {
+    @apply p-4 border-2 border-black bg-white group-hover:bg-black 
+           group-hover:text-white transition-all shadow-[2px_2px_0_rgba(0,0,0,1)];
+  }
+
+  .panel {
+    @apply border-4 border-black bg-white shadow-[4px_4px_0_rgba(0,0,0,1)] overflow-hidden;
+  }
+
+  .social-link {
+    @apply bg-white border-2 border-black py-2 px-3 text-[10px] font-bold shadow-[2px_2px_0_rgba(0,0,0,1)] hover:bg-black hover:text-white transition-all flex items-center justify-between uppercase active:shadow-none active:translate-x-[1px] active:translate-y-[1px];
+  }
+}
+
+body {
+  font-family: var(--font-pixel);
+}
